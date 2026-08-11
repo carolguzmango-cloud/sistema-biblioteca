@@ -29,4 +29,5 @@ Este proyecto para la materia de Estructuras de Datos implementa un sistema para
 * **Establecer la función de cada estructura dentro del sistema**
 * **Organizar la base conceptual para la implementación**
   ## Primer avance del proyecto
+  (se realiza un modelo relacional para establecer tablas y cardinalidad, se empezaron a hacer en consola neon )
   
