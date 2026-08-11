@@ -28,3 +28,5 @@ Este proyecto para la materia de Estructuras de Datos implementa un sistema para
 * **Definir árbol binario de búsqueda para libros**
 * **Establecer la función de cada estructura dentro del sistema**
 * **Organizar la base conceptual para la implementación**
+  ## Primer avance del proyecto
+  
