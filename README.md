@@ -14,3 +14,17 @@ Este proyecto para la materia de Estructuras de Datos implementa un sistema para
 * **Carol Dayanna Guzmán Gómez** (carol.guzmango@amigo.edu.co) - [@carolguzmango-cloud](https://github.com/carolguzmango-cloud)
 * **Valentina Posada Cadavid** (valentina.posadaad@amigo.edu.co) - [@valep7](https://github.com/valep7)
 * **María Camila Bustamante Gutiérrez** (maria.bustamantegu@amigo.edu.co) - [@mariabustamantegu-jpg](https://github.com/mariabustamantegu-jpg)
+
+## Establecer estructura inicial del sistema de biblioteca
+
+* **Definir registro y consulta de libros y usuarios**
+* **Planificar gestión de préstamos y devoluciones**
+* **Establecer control de solicitudes mediante estructuras de datos**
+* **Crear estructura y planificación inicial del proyecto**
+
+## Planificar estructuras de datos del sistema
+
+* **Analizar el uso de listas, pilas y colas**
+* **Definir árbol binario de búsqueda para libros**
+* **Establecer la función de cada estructura dentro del sistema**
+* **Organizar la base conceptual para la implementación**
