@@ -31,3 +31,15 @@ Este proyecto para la materia de Estructuras de Datos implementa un sistema para
   ## Primer avance del proyecto
   (se realiza un modelo relacional para establecer tablas y cardinalidad, se empezaron a hacer en consola neon )
   
+biblioteca.py
+#sistema de gestión de biblioteca
+print("sistema de biblioteca")
+print("Bienvenido al sistema de gestión de préstamos")
+print("opciones: ")
+print("1. Registrar libro")
+print("2. Mostrar libros")
+print("3. Prestar libro")
+print("4. Devolver libro")
+print("5. Buscar libro")
+print("0. salir")
+#inicio del sistema biblioteca 
