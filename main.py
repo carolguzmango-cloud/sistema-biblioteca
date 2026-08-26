@@ -1,7 +1,4 @@
 # Sistema de Gestión de Biblioteca - Avance Inicial
-
-# --- 1. USO DE VECTORES (LISTAS EN PYTHON) ---
-# Vector con el catálogo inicial de libros
 catalogo_libros = [
     "Estructuras de Datos en Python",
     "Cien Años de Soledad",
@@ -13,11 +10,10 @@ for i, libro in enumerate(catalogo_libros, 1):
     print(f"Libro {i}: {libro}")
 
 
-# --- 2. USO DE MATRICES (LISTAS ANIDADAS EN PYTHON) ---
-# Matriz de préstamos: [ID Estudiante, ID Libro]
+#USO DE MATRICES 
 matriz_prestamos = [
-    [101, 1],  # Estudiante 101 pidió el Libro 1
-    [102, 3]   # Estudiante 102 pidió el Libro 3
+    [101, 1],  
+    [102, 3]   
 ]
 
 print("\n=== REGISTRO DE PRÉSTAMOS (MATRICES) ===")
