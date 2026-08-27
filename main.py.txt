@@ -1,0 +1,131 @@
+# ==============================================================================
+# SISTEMA DE GESTIÓN DE BIBLIOTECA - ESTRUCTURAS DE DATOS
+# Lenguaje: Python 3
+# Integrantes: Carol Dayanna Guzmán Gómez, Valentina Posada, María Camila Bustamante
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# 1. ESTRUCTURAS DE DATOS (VECTORES Y MATRICES)
+# ------------------------------------------------------------------------------
+
+# VECTOR 1D: Lista con el catálogo de libros [ID, Título, Autor]
+catalogo_libros = [
+    ["101", "Estructuras de Datos en Python", "Mark Allen Weiss"],
+    ["102", "Cien Anos de Soledad", "Gabriel Garcia Marquez"],
+    ["103", "Fundamentos de Sistemas", "Andrew Tanenbaum"]
+]
+
+# VECTOR 1D: Lista con el registro de usuarios [ID, Nombre]
+usuarios = [
+    ["U1", "Carol Guzman"],
+    ["U2", "Valentina Posada"],
+    ["U3", "Camila Bustamante"]
+]
+
+# MATRIZ 2D: Lista de listas para gestionar los préstamos
+# Estructura de cada fila: [ID_Prestamo, ID_Usuario, ID_Libro, Estado]
+matriz_prestamos = [
+    ["P1", "U1", "101", "PRESTADO"],
+    ["P2", "U2", "102", "DEVUELTO"]
+]
+
+
+# ------------------------------------------------------------------------------
+# 2. FUNCIONES DEL SISTEMA
+# ------------------------------------------------------------------------------
+
+def mostrar_libros():
+    """Recorre el vector de libros y los muestra en pantalla."""
+    print("\n--- CATÁLOGO DE LIBROS (VECTOR) ---")
+    for libro in catalogo_libros:
+        print(f"ID: {libro[0]} | Título: {libro[1]} | Autor: {libro[2]}")
+
+
+def registrar_libro():
+    """Agrega un nuevo elemento al vector catalogo_libros."""
+    print("\n--- REGISTRAR NUEVO LIBRO ---")
+    id_libro = input("Ingrese el ID/ISBN del libro: ")
+    titulo = input("Ingrese el título del libro: ")
+    autor = input("Ingrese el autor del libro: ")
+    
+    # Agregamos una nueva lista (elemento) al vector principal
+    catalogo_libros.append([id_libro, titulo, autor])
+    print(f"¡Libro '{titulo}' guardado exitosamente!")
+
+
+def prestar_libro():
+    """Registra una nueva fila en la matriz de préstamos."""
+    print("\n--- REGISTRAR PRÉSTAMO ---")
+    id_usuario = input("Ingrese ID del usuario (ej. U1): ")
+    id_libro = input("Ingrese ID del libro (ej. 101): ")
+    
+    # Generamos el ID automático para la matriz (P3, P4, etc.)
+    id_prestamo = f"P{len(matriz_prestamos) + 1}"
+    
+    # Insertamos la nueva fila en la matriz 2D
+    matriz_prestamos.append([id_prestamo, id_usuario, id_libro, "PRESTADO"])
+    print(f"¡Préstamo {id_prestamo} registrado con éxito!")
+
+
+def devolver_libro():
+    """Busca en la matriz por ID de préstamo y actualiza su estado."""
+    print("\n--- DEVOLVER LIBRO ---")
+    id_prestamo = input("Ingrese ID del préstamo a devolver (ej. P1): ")
+    
+    encontrado = False
+    for fila in matriz_prestamos:
+        if fila[0] == id_prestamo:
+            fila[3] = "DEVUELTO"  # Modificamos la columna de Estado dentro de la matriz
+            print(f"¡El préstamo {id_prestamo} ahora figura como DEVUELTO!")
+            encontrado = True
+            break
+            
+    if not encontrado:
+        print("No se encontró ningún préstamo con ese ID.")
+
+
+def mostrar_matriz_prestamos():
+    """Muestra la matriz 2D completa con todas las transacciones."""
+    print("\n--- MATRIZ DE CONTROL DE PRÉSTAMOS (2D) ---")
+    print("ID_PRESTAMO | ID_USUARIO | ID_LIBRO | ESTADO")
+    print("-" * 45)
+    for fila in matriz_prestamos:
+        print(f"{fila[0]:<11} | {fila[1]:<10} | {fila[2]:<8} | {fila[3]}")
+
+
+# ------------------------------------------------------------------------------
+# 3. MENÚ INTERACTIVO (CONSOLA)
+# ------------------------------------------------------------------------------
+
+def menu():
+    while True:
+        print("\n=================================")
+        print("  SISTEMA DE BIBLIOTECA EN PYTHON")
+        print("=================================")
+        print("1. Ver catálogo de libros")
+        print("2. Registrar nuevo libro")
+        print("3. Registrar préstamo")
+        print("4. Devolver libro")
+        print("5. Ver matriz de préstamos")
+        print("0. Salir")
+        
+        opcion = input("Seleccione una opción: ")
+        
+        if opcion == "1":
+            mostrar_libros()
+        elif opcion == "2":
+            registrar_libro()
+        elif opcion == "3":
+            prestar_libro()
+        elif opcion == "4":
+            devolver_libro()
+        elif opcion == "5":
+            mostrar_matriz_prestamos()
+        elif opcion == "0":
+            print("Saliendo del programa...")
+            break
+        else:
+            print("Opción no válida. Intente de nuevo.")
+
+if __name__ == "__main__":
+    menu()
