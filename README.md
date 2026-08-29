@@ -41,5 +41,12 @@ print("2. Mostrar libros")
 print("3. Prestar libro")
 print("4. Devolver libro")
 print("5. Buscar libro")
-print("0. salir")
-#inicio del sistema biblioteca 
+
+## 3. Política de Uso de Inteligencia Artificial (IA)
+En este proyecto utilizamos asistentes de IA como herramientas de apoyo para:
+* Explicación de conceptos teóricos de complejidad algorítmica ($O(N)$ vs $O(N^2)$).
+* Guía en la corrección de sintaxis y formateo de documentación Markdown (`.md`).
+* Depuración de errores en las funciones auxiliares del código.
+
+## 4. Licencia
+Este proyecto es de uso académico para la asignatura de Estructuras de Datos. 
