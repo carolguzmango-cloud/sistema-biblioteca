@@ -44,7 +44,7 @@ print("5. Buscar libro")
 
 ## 3. Política de Uso de Inteligencia Artificial (IA)
 En este proyecto utilizamos asistentes de IA como herramientas de apoyo para:
-* Explicación de conceptos teóricos de complejidad algorítmica ($O(N)$ vs $O(N^2)$).
+* Explicación de conceptos teóricos de complejidad algorítmica (O(N) vs O(N^2)).
 * Guía en la corrección de sintaxis y formateo de documentación Markdown (`.md`).
 * Depuración de errores en las funciones auxiliares del código.
 
