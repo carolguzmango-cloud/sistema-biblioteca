@@ -20,7 +20,6 @@ Este proyecto para la materia de Estructuras de Datos implementa un sistema para
 * **Definir registro y consulta de libros y usuarios**
 * **Planificar gestión de préstamos y devoluciones**
 * **Establecer control de solicitudes mediante estructuras de datos**
-* **Crear estructura y planificación inicial del proyecto**
 
 ## Planificar estructuras de datos del sistema
 
@@ -28,25 +27,13 @@ Este proyecto para la materia de Estructuras de Datos implementa un sistema para
 * **Definir árbol binario de búsqueda para libros**
 * **Establecer la función de cada estructura dentro del sistema**
 * **Organizar la base conceptual para la implementación**
-  ## Primer avance del proyecto
-  (se realiza un modelo relacional para establecer tablas y cardinalidad, se empezaron a hacer en consola neon )
-  
-biblioteca.py
-#sistema de gestión de biblioteca
-print("sistema de biblioteca")
-print("Bienvenido al sistema de gestión de préstamos")
-print("opciones: ")
-print("1. Registrar libro")
-print("2. Mostrar libros")
-print("3. Prestar libro")
-print("4. Devolver libro")
-print("5. Buscar libro")
+   
 
-## 3. Política de Uso de Inteligencia Artificial (IA)
+## Política de Uso de Inteligencia Artificial (IA)
 En este proyecto utilizamos asistentes de IA como herramientas de apoyo para:
 * Explicación de conceptos teóricos de complejidad algorítmica (O(N) vs O(N^2)).
 * Guía en la corrección de sintaxis y formateo de documentación Markdown (`.md`).
 * Depuración de errores en las funciones auxiliares del código.
 
-## 4. Licencia
+## Licencia
 Este proyecto es de uso académico para la asignatura de Estructuras de Datos. 
