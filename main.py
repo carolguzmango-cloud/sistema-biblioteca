@@ -92,6 +92,32 @@ def mostrar_matriz_prestamos():
     for fila in matriz_prestamos:
         print(f"{fila[0]:<11} | {fila[1]:<10} | {fila[2]:<8} | {fila[3]}")
 
+# FUNCIONES ADICIONALES PARA PRUEBAS UNITARIAS
+
+
+import unicodedata
+
+def normalizar_texto(texto):
+    """Elimina tildes y convierte a minúsculas para comparar textos."""
+    texto = texto.lower()
+    texto = unicodedata.normalize("NFD", texto)
+    texto = "".join(c for c in texto if unicodedata.category(c) != "Mn")
+    return texto
+
+def buscar_libro(valor):
+    """Busca un libro por ID o título en el catálogo (sin importar tildes o mayúsculas)."""
+    valor_normalizado = normalizar_texto(valor)
+    for libro in catalogo_libros:
+        id_libro = normalizar_texto(libro[0])
+        titulo_libro = normalizar_texto(libro[1])
+        if id_libro == valor_normalizado or titulo_libro == valor_normalizado:
+            return libro
+    return None
+
+def calcular_matriz_prestamos():
+    """Devuelve la matriz completa de préstamos (lista de listas)."""
+    return matriz_prestamos
+
 
 # ------------------------------------------------------------------------------
 # 3. MENÚ INTERACTIVO (CONSOLA)

@@ -4,7 +4,7 @@ from main import buscar_libro, calcular_matriz_prestamos
 class TestSistemaBiblioteca(unittest.TestCase):
 
     def test_buscar_libro_existente(self):
-        # Caso de prueba: buscar un libro que sí existe
+        # Caso de prueba: buscar un libro que sí existe (por título con tilde)
         self.assertTrue(buscar_libro("Cien años de soledad"))
 
     def test_buscar_libro_inexistente(self):
