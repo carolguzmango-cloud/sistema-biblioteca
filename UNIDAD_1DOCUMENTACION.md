@@ -1,9 +1,7 @@
-\# DOCUMENTACIÓN TÉCNICA DEL SISTEMA DE BIBLIOTECA
-
+\# DOCUMENTACIÓNDEL SISTEMA DE BIBLIOTECA
 
 
 \## 1. Estructuras de Datos
-
 
 
 \### Vectores (listas 1D en Python)
@@ -65,12 +63,10 @@ El sistema utiliza una matriz para gestionar préstamos:
 \- \*\*mostrar\_matriz\_prestamos()\*\*: recorrido completo de la matriz → O(N²).
 
 
-
 \---
 
 
-
-\## 3. Casos de Prueba
+\## 3. Pruebas
 
 
 
@@ -91,13 +87,10 @@ El sistema utiliza una matriz para gestionar préstamos:
 \- \*\*Prueba de error controlado:\*\* intentar devolver un préstamo inexistente y verificar que se muestre el mensaje de error.
 
 
-
 \---
 
 
-
 \## 4. Conclusión
-
 
 
 El sistema implementa estructuras de datos simples (vectores y matrices) que permiten gestionar información de manera eficiente.  
