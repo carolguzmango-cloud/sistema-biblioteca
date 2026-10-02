@@ -1,9 +1,9 @@
 import customtkinter as ctk
 from tkinter import ttk, messagebox
 
-# ==============================================================================
+
 # UNIDAD 1 & 2: ESTRUCTURAS DE DATOS Y POO
-# ==============================================================================
+
 
 class Libro:
     def __init__(self, id_libro, titulo, autor):
@@ -134,9 +134,9 @@ lista_prestamos = ListaDoblementeEnlazada()
 lista_prestamos.agregar(Prestamo("P1", "Carol Guzmán", "Estructuras de Datos en Python", "PRESTADO"))
 lista_prestamos.agregar(Prestamo("P2", "Valentina Posada", "Cien Años de Soledad", "DEVUELTO"))
 
-# ==============================================================================
+
 # INTERFAZ GRÁFICA (CustomTkinter)
-# ==============================================================================
+
 ctk.set_appearance_mode("Light")
 
 COLOR_FONDO = "#F4F0EA"
@@ -229,9 +229,9 @@ class AppBiblioteca(ctk.CTk):
         for widget in self.panel_contenido.winfo_children():
             widget.destroy()
 
-    # --------------------------------------------------------------------------
+    
     # VISTA 1: DASHBOARD
-    # --------------------------------------------------------------------------
+    
     def vista_dashboard(self):
         self.limpiar_panel()
 
@@ -286,9 +286,9 @@ class AppBiblioteca(ctk.CTk):
         lbl_t = ctk.CTkLabel(card, text=titulo, font=ctk.CTkFont(size=11, weight="bold"), text_color=COLOR_TEXTO_SUAVE)
         lbl_t.pack(anchor="w", padx=12, pady=(0, 8))
 
-    # --------------------------------------------------------------------------
+    
     # VISTA 2: LIBROS
-    # --------------------------------------------------------------------------
+    
     def vista_libros(self):
         self.limpiar_panel()
 
@@ -349,9 +349,9 @@ class AppBiblioteca(ctk.CTk):
 
         self.mostrar_tabla_libros(row=2)
 
-    # --------------------------------------------------------------------------
+   
     # VISTA 3: USUARIOS
-    # --------------------------------------------------------------------------
+    
     def vista_usuarios(self):
         self.limpiar_panel()
 
@@ -411,9 +411,9 @@ class AppBiblioteca(ctk.CTk):
 
         tree.pack(fill="both", expand=True, padx=15, pady=15)
 
-    # --------------------------------------------------------------------------
+    
     # VISTA 4: PRÉSTAMOS, MULTAS Y ESTADOS
-    # --------------------------------------------------------------------------
+    
     def vista_prestamos(self):
         self.limpiar_panel()
 
@@ -581,9 +581,9 @@ class AppBiblioteca(ctk.CTk):
 
         tree_m.pack(fill="both", expand=True, padx=15, pady=8)
 
-    # --------------------------------------------------------------------------
+    
     # TABLAS AUXILIARES
-    # --------------------------------------------------------------------------
+    
     def mostrar_tabla_libros(self, row):
         frame = ctk.CTkFrame(self.panel_contenido, fg_color=COLOR_PANEL, corner_radius=16)
         frame.grid(row=row, column=0, sticky="nsew")
