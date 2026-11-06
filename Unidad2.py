@@ -15,7 +15,7 @@ class Usuario:
     def __init__(self, id_usuario, nombre):
         self.id_usuario = id_usuario
         self.nombre = nombre
-        self.multa_acumulada = 0  # Control de multas individual
+        self.multa_acumulada = 0  
 
 class Prestamo:
     def __init__(self, id_prestamo, usuario_nombre, libro_titulo, estado="PRESTADO"):
@@ -141,11 +141,11 @@ ctk.set_appearance_mode("Light")
 
 COLOR_FONDO = "#F4F0EA"
 COLOR_PANEL = "#FFFFFF"
-COLOR_SIDEBAR = "#E2D4F0"       # Morado claro / Lavanda
+COLOR_SIDEBAR = "#E2D4F0"       
 COLOR_TEXTO = "#3A3042"
 COLOR_TEXTO_SUAVE = "#705D82"
 
-COLOR_AZUL_CIELO = "#A0C4FF"    # Azul cielo
+COLOR_AZUL_CIELO = "#A0C4FF"    
 COLOR_AZUL_HOVER = "#80B3FF"
 COLOR_MORADO_SUAVE = "#C8B6E2"
 COLOR_TARJETA_AZUL = "#B9F3FC"
