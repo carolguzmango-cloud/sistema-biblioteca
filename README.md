@@ -36,3 +36,6 @@ En este proyecto utilizamos asistentes de IA como herramientas de apoyo para:
 
 ## Licencia
 Este proyecto es de uso académico para la asignatura de Estructuras de Datos. 
+
+## 📌 Conclusión del Proyecto
+El desarrollo del **Sistema Inteligente de Biblioteca** permitió aplicar de forma práctica y eficiente los conceptos fundamentales de las Estructuras de Datos. La integración de una **Lista Doblemente Enlazada** para la gestión de entidades, una **Pila Dinámica (LIFO)** orientada al historial con control de cambios (*Undo/Redo*), una **Cola (FIFO)** para la atención secuencial, y un **Árbol Binario de Búsqueda (BST)** optimizado para la indexación y búsqueda alfabética de libros por título y género, demostró cómo las estructuras abstractas resuelven problemas reales de rendimiento y arquitectura de software. Asimismo, el diseño de la interfaz gráfica en CustomTkinter consolidó una experiencia de usuario robusta, moderna y funcional, cumpliendo con los estándares de ingeniería requeridos para el curso.
