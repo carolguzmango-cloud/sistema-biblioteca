@@ -13,7 +13,6 @@ Este proyecto para la materia de Estructuras de Datos implementa un sistema para
 
 * **Carol Dayanna Guzmán Gómez** (carol.guzmango@amigo.edu.co) - [@carolguzmango-cloud](https://github.com/carolguzmango-cloud)
 * **Valentina Posada Cadavid** (valentina.posadaad@amigo.edu.co) - [@valep7](https://github.com/valep7)
-* **María Camila Bustamante Gutiérrez** (maria.bustamantegu@amigo.edu.co) - [@mariabustamantegu-jpg](https://github.com/mariabustamantegu-jpg)
 
 ## Establecer estructura inicial del sistema de biblioteca
 
